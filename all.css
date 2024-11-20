@@ -1,0 +1,620 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* css reset end */
+.container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .item {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-innerform-imgbox{
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: #4c4c4c 2px solid;
+}
+.item-innerform-img{
+    /* float: left; */
+    width: 49%;
+    /* padding: 10px; */
+    object-fit:contain;
+    box-sizing:border-box;
+}
+.item-innerform-img-predict{
+    /* float: right; */
+    object-fit:fill;
+    width: 49%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+.container .item:hover {
+    color: blue;
+}
+
+.container .link {
+    height: 100%;
+    text-decoration: none;
+    color: #0000009d;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+
+.container h2 {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container .imgbox {}
+
+.container .operation {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.operation a {
+    border-radius: 10%;
+    padding: 7px;
+    background-color: rgba(113, 196, 85, 0.633);
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.operation a:hover {
+    color: white;
+    background-color: rgba(82, 127, 68, 0.633);
+}
+
+.contain .noanswer {
+    color: rgba(57, 50, 50, 0.616);
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    font-weight: bold;
+}
+
+body {
+    background-color: #ffffff9d;
+}
+
+.contain {
+    min-height: 450px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+}
+
+.PhotoContain {
+    background-color: rgba(80, 81, 74, 0.665);
+}
+
+.photoViewer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.photoViewer img {
+    padding: 5%;
+    padding-top: 2%;
+    width: 100%;
+    object-fit: contain;
+    height: 600px;
+}
+
+.photoViewer p {
+    text-align: center;
+    font-size: 18px;
+}
+
+h1.topic {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: rgb(61, 61, 61);
+    margin-bottom: 30px;
+}
+
+.backBlock {
+    height: 30px;
+    width: 80px;
+    display: flex;
+    background-color: pink;
+    border-radius: 5%;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.addfolder {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    background-color: rgba(174, 192, 74, 0.591);
+    border-radius: 5%;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.uploadfile {
+    height: 30px;
+    width: 80px;
+    display: flex;
+    background-color: rgba(174, 192, 74, 0.591);
+    border-radius: 5%;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.tool-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box {
+    margin-right: 40px;
+    display: flex;
+}
+
+.button-text {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+}
+
+a.button-link {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+h1.position {
+    padding-left: 15px;
+    width: 30%;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.mymodal-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mymodal-text{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+}
+.mymodal-hint{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(221, 64, 64);
+    padding-left: 10px;
+    font-weight:bolder;
+    padding-bottom: 15px;
+}
+
+.mymodal-filename {
+    padding: 10px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.mymodal-upload {
+    margin-top: 10px;
+}
+
+h1.welcome {
+    color: rgba(57, 50, 50, 0.616);
+    font-size: 36px;
+    display: block;
+    text-align: center;
+    padding-top: 150px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+p.updateTime {
+    color: rgba(57, 50, 50, 0.616);
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+}
+.delete{
+    
+}
+/* versionInfo start*/
+.versionInfo {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.versionInfo ul {
+    list-style: circle;
+    color: gray;
+    font-weight: 900;
+}
+
+.versionInfo li {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.Info h1 {
+    font-size: 24px;
+}
+
+.Info p {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/* versionInfo end */
+.stockList_container{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    padding: 30px;
+}
+.stockList_item{
+    width: 100%;
+    background-color: rgba(214, 214, 214, 0.325);
+    box-shadow: 1px 2px rgb(174, 174, 174);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.item-innerform{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item-baktest{
+    width: 100%;
+    margin-top: 30px;
+    padding:0px 20px 20px 20px;
+    box-sizing: border-box;
+}
+.item-baktest-p{
+    float: left;
+    width: 48%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.positiveValue{
+    color: rgb(250, 0, 0);
+}
+
+/* AJAX waiting circle start */
+.background-black {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: #0000004a;
+  }
+  
+  
+  .hintArea {
+    margin: 5% 20% 0% 20%;
+    border-radius: 5px;
+    border: #000000cb 2px solid;
+    box-shadow:inset #dddddd74 3px 2px;
+    background-color: #fff;
+    display: none;
+  }
+  
+  
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .load-screen {
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  
+    span {
+      display: block;
+      text-align: center;
+  
+      &.load-text {
+        font-weight: 700;
+      }
+  
+      &.cirlce {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 8px solid #000;
+        border-left-color: #ccc;
+        border-right-color: #ccc;
+        margin-bottom: 8px;
+        animation: rotate 1s linear infinite both;
+      }
+    }
+  }
+  
+  .load-text {
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .load-hintTopic{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 30px;
+    color: gray;
+    display: none;
+  }
+  .load-hint{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: rgb(110, 109, 109);
+    display: none;
+  }
+  .load-hint-container{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ededed;
+    border: #000 2px solid;
+    border-radius: 4px;
+    display: none;
+  }
+/* AJAX waiting circle end */
+/* asking start */
+.asking-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.asking-hint{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:rgba(57, 50, 50, 0.616);
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.asking-welcome{
+    position: absolute;
+    width:100%;
+    /* left: 50%; */
+    top: 35%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color:rgba(57, 50, 50, 0.157);
+    margin-bottom: 15px;
+    cursor: default;
+    user-select:none;
+}
+.asking-form{
+    text-align: center;
+}
+.asking-form input[type='text']{
+    width: 80%;
+    padding: 10px;
+    border-radius: 30px;
+    border: #000 3px solid;
+}
+.asking-form input[type='text']:hover{
+    border: rgb(189, 189, 189) 3px solid;
+    transition: border 0.2s ease;
+}
+.asking-form input[type='submit']{
+    margin-left: 40px;
+    background-color: #2c2929;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+.asking-form input[type='submit']:hover{
+    background-color: rgb(218, 218, 218);
+    color: #070707;
+    transition: background-color 0.2s ease;
+    /* transition: color 0.5s ease; */
+}
+/* asking end */
