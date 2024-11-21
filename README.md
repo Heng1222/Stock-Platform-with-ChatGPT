@@ -11,11 +11,75 @@
 3. 建立歷史回測系統，提供回測數據計算
 
 ## 環境
+```
+XAMPP v3.3.0
+Apache & MYSQL
+Python 3.7.9
+```
+## 技術
 
-## 操作
++ PHP Server
++ HTML/CSS
++ JavaScript、Ajax
++ Python
+  + Pandas
+  + Chat GPT API
+  + Prophet
 
-## 預測系統
+## Python 套件
+```
+stastic
+pandas
+datetime
+mplfinance
+json
+sys
+traceback
+FinMind.data
+os
+requests
+```
+
+## 股價資料來源
+
+本專案之股票原始資料來源為<FinMind 金融 X 大數據>網站提供之API，包含股票的開盤、最高、最低、收盤價及交易量等資料
+
+[FinMind](https://finmindtrade.com/)
+
+## ChatGPT API
+
+使用者以自然語言輸入選股策略，並由ChatGPT協助將其轉為等價的條件判斷式，並從股票清單(所有有興趣的股票標的)中篩選出當下符合使用者策略的標的
+
+[Open API](https://platform.openai.com/docs/api-reference/introduction)
+
+## 回測數據
+
+根據該次篩選出的股票標的進行回測計算，依照當前使用者的選股策略作為進場策略，計算其投資結果並儲存為Json格式檔案，儲存範例如下：
+
+```
+標的代號 : "2867"
+公司名稱 : 三商壽
+分析日期 : "2024-05-17"
+最後收盤價 : 5.72
+最後開盤價 : 5.8
+總報酬率 : 10.83%
+交易次數 : 2
+平均報酬 : 5.42%
+平均勝率 : 50%
+平均獲利 : 19.42%
+平均虧損 : -8.59%
+期望值 : 0.6304
+平均獲利持有天數 : 59
+平均虧損持有天數 : 253
+```
+
 
 ## Prophet模型
 
-## ChatGPT API
+除了歷史回測外，本專案亦採用Prophet模型預測未來股價變化，提供更客觀、更完整的分析需求
+
+[prophet](https://facebook.github.io/prophet/)
+
+## 前端操作介面
+
+簡易前端介面提供使用者操作及查看分析結果
