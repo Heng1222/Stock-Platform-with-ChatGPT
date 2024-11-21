@@ -5,10 +5,9 @@ import os
 import requests as request
 
 FM = DataLoader()
-FM.login(user_id="maxbeettww", password="a28054635")
+FM.login(user_id="???", password="???") #finMind帳號登入
 # 取得資料
 def getData(prod, st, ed):
-    # FM.login_by_token("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRlIjoiMjAyNC0wNC0wMSAyMDo0OTowMyIsInVzZXJfaWQiOiJtYXhiZWV0dHd3IiwiaXAiOiIxMDEuMTIuMjUuMTI5In0.IPrx_CyqLULqoqGWQXV87gpZMWtCtjeOyEoCYif1Imc")
     tempdata = FM.taiwan_stock_daily(stock_id=prod, start_date=st, end_date=ed) #API取得資料
     tempdata = tempdata.rename(columns={'max':'high', 'min':'low', 'Trading_Volume':'volume'}) #重新命名
     tempdata['date'] = pd.to_datetime(tempdata['date']) #轉為datetime型態
