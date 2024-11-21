@@ -10,6 +10,15 @@
 2. 建立股票預測系統，利用開源預測模型「Prophet」進行股價預測 
 3. 建立歷史回測系統，提供回測數據計算
 
+##  系統介面
+
+![image](https://github.com/Heng1222/Stock-Platform-with-ChatGPT/blob/main/Readme_img/%E5%88%86%E6%9E%90%E7%B5%90%E6%9E%9C1.png)
+
+![image](https://github.com/Heng1222/Stock-Platform-with-ChatGPT/blob/main/Readme_img/%E7%94%9F%E6%88%902.png)
+
+![image](https://github.com/Heng1222/Stock-Platform-with-ChatGPT/blob/main/Readme_img/%E5%88%86%E6%9E%90%E7%B5%90%E6%9E%9C3.png)
+
+
 ## 環境
 ```
 XAMPP v3.3.0
